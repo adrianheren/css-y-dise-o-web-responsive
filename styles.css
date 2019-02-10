@@ -1,0 +1,154 @@
+body{
+  margin: 0 auto;
+  font-family: 'Dancing Script', cursive;
+  background-color: #02010a;
+}
+.contenido{
+  width: 900px;
+  margin: auto;
+}
+.visitado{
+  text-decoration: none;
+}
+header{
+  background-color:#5b7989;
+  margin: 0 auto;
+  border-radius: 10px 10px 0 0;
+  animation: slidein 1.5s;
+}
+h1 {
+  color: white;
+  text-shadow: 2px 2px #02010a;
+  margin: 0 auto;
+}
+img{
+  box-shadow: 2px 2px  #02010a
+}
+.redes{
+text-align: left;
+}
+.redes img{
+  box-shadow: inherit;
+}
+.menu{
+  text-align: right;
+}
+a{
+  margin-right: 10px;
+  color: white;
+  font-size: 1.3em;
+}
+.centerimage{
+  text-align: center;
+  background-color:  #82c3a6;
+}
+.centerimage img{
+  margin: .2%;
+}
+.secimages{
+display: inline-flex;
+background-color:  #d5c75f;
+border: 1px solid;
+}
+.secimages img{
+  margin: 1.5%
+}
+.paisajes{
+  width: 50%;
+  text-align: center;
+}
+.paisajes :hover{
+  transform: rotate(10deg);
+  border: 2px #82c3a6;
+}
+.retrato{
+  width: 50%;
+  text-align: center;
+}
+.retrato :hover{
+  transform: translate(5px, -20px);
+  border: 2px #82c3a6;
+}
+section{
+  text-align: center;
+  background-color:  #d5c75f;
+  margin: auto;
+}
+.galeria{
+  width: 30%;
+  display: -webkit-inline-box;
+  margin: 1%;
+  }
+footer{
+  background-color: #C6d5c5;
+  display: inline-flex;
+  width: 100%;
+  border-radius: 0 0 10px 10px;
+}
+footer div{
+  width: 25%;
+  text-align: center;
+}
+.uno {
+  -webkit-filter: blur(10px);
+}
+.dos,
+.cuatro,
+.seis {
+  -webkit-filter: grayscale(100%);
+}
+.tres {
+  -webkit-filter: sepia(90%);
+}
+@-webkit-keyframes slidein{
+  0%{
+    margin-top: 150%;
+  }
+  60%{
+    margin-top: -5%;
+  }
+  100%{
+    margin-top: 0%;
+  }
+}
+@media all and (max-width:900px) {
+  header h1, .menu{
+    text-align: center;
+  }
+  .contenido{
+    width: 99%;
+    margin: .5%;
+  }
+  .centerimage img{
+    width: 90%;
+  }
+  .secimages{
+  display: block;
+  width: 100%;
+  }
+  .paisajes{
+    width: 100%;
+    text-align: center;
+  }
+  .retrato{
+    width: 100%;
+    text-align: center;
+  }
+  .galeria{
+    width: 98%;
+    display: -webkit-inline-box;
+    margin: 1%;
+    }
+  footer{
+    width: 100%;
+    display: block;
+  }
+  footer div{
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .redes{
+  text-align: center;
+  }
+}
